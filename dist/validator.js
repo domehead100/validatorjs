@@ -658,6 +658,7 @@ function leapYear(year) {
 
 function checkFalsePositiveDates(dateString = '') {
 
+  if (typeof dateString !== "string") return true;
   if (dateString.length === 10) {
 
     // massage input to use yyyy-mm-dd format
